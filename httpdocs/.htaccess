@@ -1,0 +1,12 @@
+Options -Indexes
+<IfModule mod_headers.c>
+  <FilesMatch "\.(txt)$">
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+  <FilesMatch "\.(js|css)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>
+<FilesMatch "\.(sqlite|sqlite-wal|sqlite-shm)$">
+  Require all denied
+</FilesMatch>

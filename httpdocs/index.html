@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07040a">
+<title>HEXLE — cursed word game</title>
+<meta name="description" content="A Halloween word-guessing game: daily hex, endless mode and multiplayer covens with live chat.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 28S3.4 20.6 3.4 11.8C3.4 7.6 6.6 4.8 10 4.8c2.6 0 4.8 1.4 6 3.6 1.2-2.2 3.4-3.6 6-3.6 3.4 0 6.6 2.8 6.6 7 0 8.8-12.6 16.2-12.6 16.2z' fill='%23160810' stroke='%23ff2e5b' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body>
+<div class="sky" aria-hidden="true">
+  <div class="moon"></div>
+  <div class="web"><svg viewBox="0 0 32 32"><g stroke="#cdbac4" stroke-width=".35" fill="none"><path d="M0 0L32 6M0 0L28 18M0 0L18 28M0 0L6 32"/><path d="M8 1.5Q7 5 6.5 7Q4 7.5 1.5 8"/><path d="M15 3Q13 9 12 12Q8 14 3 15"/><path d="M22 4.2Q19.5 13 17.5 17.5Q12 20 4.2 22"/><path d="M29 5.5Q25 18 23 23Q16 26 5.5 29"/></g></svg></div>
+  <div class="spider" id="spider"></div>
+  <div class="fog"></div>
+</div>
+<div class="app">
+  <header class="topbar">
+    <div class="left" id="tb-left"></div>
+    <a class="brand" href="#/" id="brand"></a>
+    <div class="right" id="tb-right"></div>
+  </header>
+  <main id="view"></main>
+</div>
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+<script src="assets/config.js?v=3"></script>
+<script src="assets/icons.js?v=3"></script>
+<script src="assets/app.js?v=3"></script>
+</body>
+</html>
